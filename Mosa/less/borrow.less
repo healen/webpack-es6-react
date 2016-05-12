@@ -1,0 +1,314 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+/*首页样式*/
+
+.borrowbox{
+	background: #ffffff;
+	margin: 37px 0px;
+}
+
+.borrowbtnbox{
+	width: 120px;
+	margin: 0px auto
+}
+
+.forminput{
+	min-height: 212px;
+	width: 382px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	.inputbox{
+		position: relative;
+		height: 34px;
+		background: #ffffff;
+		border: 1px solid @inputBorderColor;
+		// border-radius: 3px;
+		._clearfix();
+		-webkit-transition: all 200ms;
+		-o-transition: all 200ms;
+		transition: all 200ms;
+		.righttag{
+			._clearfix();
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			z-index: 3;
+			margin-right: 12px;
+			line-height: 34px;
+			label{
+				float: left;
+				._clearfix();
+				margin-left: 10px;
+				input{
+					float: left;
+					margin-top: 10px;
+					margin-right: 3px;
+				}
+
+			}
+
+		}
+		
+		&.focus{
+			border-color: @markColor;
+			// box-shadow: 0px 0px 5px lighten(@markColor, 10%);
+			i{
+				border-color: @markColor;
+				&.ico_username{
+				background-position: -23px -285px;
+				}
+				&.ico_password{
+					background-position: -22px -315px;
+				}
+				&.ico_tel{
+					background-position: -22px -343px;
+				}
+				&.ico_tel_verfiy{
+					background-position: -22px -398px;
+				}
+
+				&.ico_img_verfiy{
+					background-position: -22px -367px;
+				}
+
+
+				&.ico_qq{
+					background-position: -26px -708px;
+				}
+
+				&.ico_bid{
+				background-position: -26px -736px;
+				}
+				&.ico_email{
+					background-position: -26px -905px;
+				}
+
+				&.ico_money{
+					background-position: -26px -765px;
+				}
+
+
+				&.ico_objective{
+					background-position: -26px -794px;
+				}
+
+				&.ico_date{
+					background-position: -26px -824px;
+				}
+				&.ico_address{
+					background-position: -26px -852px;
+				}
+				&.ico_msg_viy{
+					background-position: -26px -880px;
+				}
+			}
+		}
+		&.error{
+			border-color: #ff0000;
+			// box-shadow: 0px 0px 5px lighten(#ff0000, 10%);
+			i{
+				border-color: #ff0000;
+				&.ico_username{
+				background-position: -51px -285px;
+				}
+				&.ico_password{
+					background-position: -50px -315px;
+				}
+				&.ico_tel{
+					background-position: -50px -343px;
+				}
+				&.ico_tel_verfiy{
+					background-position: -50px -398px;
+				}
+
+				&.ico_img_verfiy{
+					background-position: -52px -367px;
+				}
+				&.ico_qq{
+					background-position: -60px -708px;
+				}
+
+				&.ico_bid{
+					background-position: -60px -736px;
+				}
+				&.ico_email{
+					background-position: -60px -905px;
+				}
+
+				&.ico_money{
+					background-position: -60px -765px;
+				}
+
+
+				&.ico_objective{
+					background-position: -60px -794px;
+				}
+
+				&.ico_date{
+					background-position: -60px -824px;
+				}
+				&.ico_address{
+					background-position: -60px -852px;
+				}
+				&.ico_msg_viy{
+					background-position: -60px -880px;
+				}
+			}
+		}
+		i{
+			margin-top: 5px;
+			display: block;
+			float: left;
+			width: 35px;
+			height: 24px;
+			border-right: 1px solid @inputBorderColor;
+			background: url('@{img}/ico.png') no-repeat;
+
+			&.ico_username{
+				background-position: 8px -285px;
+			}
+			&.ico_password{
+				background-position: 9px -315px;
+			}
+			&.ico_tel{
+				background-position: 9px -343px;
+			}
+			&.ico_tel_verfiy{
+				background-position: 9px -398px;
+			}
+
+			&.ico_img_verfiy{
+				background-position: 9px -367px;
+			}
+			&.ico_qq{
+				background-position: 6px -708px;
+			}
+
+			&.ico_bid{
+				background-position: 6px -736px;
+			}
+			&.ico_email{
+				background-position: 6px -905px;
+			}
+
+			&.ico_money{
+				background-position: 6px -765px;
+			}
+
+
+			&.ico_objective{
+				background-position: 6px -794px;
+			}
+
+			&.ico_date{
+				background-position: 6px -824px;
+			}
+			&.ico_address{
+				background-position: 6px -852px;
+			}
+			&.ico_msg_viy{
+				background-position: 6px -880px;
+				
+			}
+
+		}
+		
+		.text_control{
+			margin-top: 5px;
+			border: none;
+			height: 24px;
+			float: left;
+			display: block;
+			line-height: 24px;
+			padding: 0px 10px;
+			width: 212px;
+
+		}
+		
+	}
+
+	label{
+		&.dubinput{
+
+			.inputbox{
+				position: relative;
+				float: left;
+				width: 260px;
+				margin-right: 7px;
+				.text_control{
+					width: 110px;
+				}
+
+			}
+
+			.rightbtn{
+				width: 112px;
+				float: left;
+				height: 36px;
+				img{
+					width: 112px;
+					height: 34px;
+					border:1px solid @inputBorderColor;
+					border-radius: 3px;
+				}
+			}
+
+		}
+	}
+
+
+	.alert{
+		height: 20px;
+		line-height: 20px;
+		font-size: 12px;
+		clear: both;
+		color: #ff0000;
+	}
+}
+
+
+._tabBtnBox(defalut,@auxColor);
+.tab_btn_defalut{
+	border-bottom: 1px solid @borderColor2;
+	&.linkstyle{
+		margin-top: 0px;
+		padding: 0px 20px;
+		height: 43px;
+		a{
+			padding: 0px 20px;
+			&.active{
+				// color: @titleFtColor;
+			}
+		}
+	}
+}
+
+.mudi{
+	border:none;
+	// width:330px;
+	// margin-left:40px; 
+	margin-top:-22px;
+	// width: 500px;
+	color:@lighten;
+	background-color: rgba(0,0,0,0);
+	&:focus{
+		border:none!important;
+	}
+	&.text_control{
+		padding: 0px 0px!important;
+		padding-left: 10px!important;
+		position: absolute;
+		left: 35px;
+		width: 335px!important;
+
+	}
+
+}
+
+.tab_btn_defalut.linkstyle a{
+	padding-top: 7px;
+}

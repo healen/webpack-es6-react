@@ -1,0 +1,97 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+@import "../lib/element";
+
+/*首页样式*/
+
+html,body{
+	height: 100%;
+}
+body{
+	background: url('@{img}/foget_passwordbg.png') no-repeat center 532px #fffcf2;
+	min-width: @documentWidth;
+}
+.header{
+	.l{
+		h1{
+			._clearfix();
+			float: left;
+		}
+		.usertitle{
+			float: left;
+			line-height: 40px;
+			height: 40px;
+			padding: 0px 20px;
+			border-left: 1px solid @borderColor;
+			margin-left: 20px;
+			margin-top: 20px;
+			font-size: @titleSize;
+		}
+	}
+}
+.footer{
+	background-color: rgba(0,0,0,0.8);
+}
+.forget_passwrod{
+	height: 355px;
+	margin: 38px auto 106px auto;
+	background: #ffffff;
+	padding-bottom: 20px;
+	.topbar{
+		// height: 122px;	
+		text-align: center;
+		position: relative;
+		border-bottom: 1px solid @borderColor;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+}
+
+._progress(progress);
+
+
+
+._form_group(form_group);
+
+
+.form_group .row .btnbox {
+    width: 240px;
+    margin: 0px auto;
+    // margin-left: 120px;
+}
+.ml120{
+	margin-left: 120px!important;
+}
+
+.middleTop{
+	.p2{
+		margin-top: 5px;
+	}
+	.p1{
+		margin-top: 10px;
+	}
+	.jump{
+		text-align: right;
+		padding-right: 20px;
+	}
+}
+
+input.input.lang{
+	width: 182px;
+}
+
+.ico{
+	padding-bottom: 20px;
+	margin-top: 50px;
+	i{
+		display: inline-block;
+		width: 42px;
+		height: 55px;
+		background: url('@{img}/ico.png') no-repeat -23px -934px;
+	}
+}
+
+
+

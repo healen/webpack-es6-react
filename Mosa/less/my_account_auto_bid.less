@@ -1,0 +1,144 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+/*银行卡样式*/
+/*银行卡样式*/
+.rechargebox{
+	padding: 20px  40px;
+}
+.discribe{
+	border-top: 1px dotted @borderColor2;
+	h2{
+		font-size: @baseFontSize + 2;
+		color: @titleFtColor;
+		padding-top: 30px;
+		margin-bottom: 10px;
+	}
+	p{
+		padding: 10px 0px;
+		._clearfix();
+		span{
+			float: left;
+		}
+		a{
+			float: right;
+			color: @markColor;
+		}
+	}
+}
+
+.open_auto_bid{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	.title{
+		width: 25%;
+		float: left;
+		line-height: 45px;
+		color: @titleFtColor;
+	}
+	.showform{
+		display: none;
+		padding-bottom: 50px;
+	}
+	.content{
+		width: 75%;
+		line-height: 45px;
+		float: left;
+		.statusdiscrib{
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.openr{
+			background: @auxColor;
+			// display: inline-block;
+			padding: 2px 10px;
+			color: #ffffff;
+			cursor: pointer;
+			border-radius: 3px;
+			&.disable{
+				background: @baseTextColor;
+			}
+			&:hover{
+				background: lighten(@auxColor, 10%)
+			}
+		}
+		.inputvalue{
+			border: 1px solid @baseTextColor;
+			height: 28px;
+			margin-top: 7px;
+			width: 70px;
+			padding: 0px 5px;
+			color: @baseTextColor;
+			display: none;
+		}
+		.selectmm{
+			margin-bottom: 20px;
+			display: none;
+			._clearfix();
+			.selectleft{
+				float: left;
+				width: 60%;
+				span{
+					
+				}
+			}
+			.disc{
+				line-height: 22px!important;
+			}
+			float: left;
+			padding-top: 10px;
+			.month_box{
+				width: 48px;
+				height: 23px;
+				float: left;
+				border:1px solid @baseTextColor;
+				text-align: center;
+				line-height: 23px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				cursor: pointer;
+				position: relative;
+				.selectstatus{
+					display: none;
+					width: 12px;
+					height: 12px;
+					border-radius: 6px;
+					// background: ;
+					position: absolute;
+					bottom: -6px;
+					right: -6px;
+					background: url('@{img}/ico.png') no-repeat -88px -611px @markColor;
+
+				}
+				&.active{
+					border-color: @markColor;
+					color: @markColor;
+					.selectstatus{
+						display: block;
+					}
+				}
+
+			}
+
+		}
+	}
+	.btn{
+		&.set{
+			width: 228px;
+			height: 32px;
+			height: 32px;
+			text-align: center;
+			color: #ffffff;
+			background: @markColor;
+			border:none;
+			cursor: pointer;
+			&:hover{
+				background: lighten(@markColor, 10%);
+			}
+			
+
+		}
+	}
+}

@@ -1,0 +1,127 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+
+
+/*银行卡样式*/
+
+
+
+/*银行卡样式*/
+
+.rechargebox{
+	padding: 20px  40px;
+	padding-top: 0px;
+}
+
+.my_form_group{
+	.input_group{
+		.input_row {
+			line-height: 38px;
+			.inputwarp{
+				input[type='text'],input[type='password']{
+					width: 190px;
+					line-height: 38px;
+				}
+				a{
+					&.btn{
+						width: 212px!important;
+						// border-radius: 0px;
+						box-shadow: none;
+					}
+				}			
+			}			
+		}		
+	}
+}  
+
+
+.viewbtnbox{
+	padding: 30px 0px;
+}
+
+
+.discribe{
+	border-top: 1px dotted @borderColor2;
+	h2{
+		font-size: @baseFontSize + 2;
+		color: @titleFtColor;
+		padding-top: 30px;
+		margin-bottom: 10px;
+	}
+	p{
+		padding: 10px 0px;
+		._clearfix();
+		span{
+			float: left;
+		}
+		a{
+			float: right;
+			color: @markColor;
+		}
+	}
+}
+.dis{
+	padding-left: 26px;
+}
+
+
+.pop_box{
+	._clearfix();
+	margin: 10px 0px;
+	.l,.r{
+		width: 49%;
+		float: left;
+		height: 100%;
+		._clearfix();
+
+		.content{
+			width: 114px;
+			height: 93px;
+			margin: 0px auto;
+			text-align:center;
+			a{
+				&.btn{
+					margin-top: 5px;
+					margin-bottom: 5px;
+					width: 100%!important;
+					border-radius: 0px;
+					box-shadow: none;
+					margin-right: 0px;
+				}
+			}		
+
+		}
+		h2{
+			font-size: 16px;
+			color: @titleFtColor;
+		}
+	}
+	.l{
+		border-right: 1px solid @borderColor2;
+	}
+	
+}
+
+.remove_bank{
+	margin-top: 5px;
+	a{
+		color: @markColor;
+	}
+}
+
+.title_line{
+	border-top: 1px dotted @borderColor2;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.bind_title{
+	font-size: 16px;
+	color: @titleFtColor;
+}
+
+

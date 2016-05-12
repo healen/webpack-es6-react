@@ -1,0 +1,167 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+
+
+.my_top_list{
+	.top_list{
+		border-bottom: none;
+	}
+}
+
+.jxqcontent{
+	margin-top: 10px;
+}
+
+.myreward{
+	padding: 0px 25px;
+}
+
+.rewardlistbox{
+	padding: 20px 32px;
+}
+
+.rewardlist{
+	@w:610px;
+	height: 150px;
+	margin-bottom: 25px;
+	width: @w;
+	._clearfix();
+	.coupon{
+		width: 160px;
+		height: 150px;
+		float: left;
+		position: relative;
+		background: url('@{img}/couponbg.png') no-repeat 0px 0px;
+		color: #ffffff;
+		text-align: center;
+		h2{
+			font-size: 32px;
+			// -webkit-text-shadow: 2px 2px 0px darken(@markColor, 10%);
+			// -moz-text-shadow: 2px 2px 0px darken(@markColor, 10%);
+			// -ms-text-shadow: 2px 2px 0px darken(@markColor, 10%);
+			// -o-text-shadow: 2px 2px 0px darken(@markColor, 10%);
+			// text-shadow: 2px 2px 0px darken(@markColor, 10%);
+			margin-top: 40px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+	.conponcontent{
+		width: @w - 162px;
+		height: 148px;
+		overflow: hidden;
+		float: left;
+		border: 1px solid @inputBorderColor;
+		border-left: none;
+		.dottedbox{
+			._clearfix();
+			height: 132px;
+			margin: 8px;
+			margin-left: 0px;
+			border:1px dotted @inputBorderColor;
+			border-left: none;
+			.iconbox{
+				width: 72px;
+				height: 130px;
+				float: left;
+				position: relative;
+				// background: #ff0000;
+				.icomeony{
+					display: block;
+					width: 17px;
+					height: 22px;
+					background: url('@{img}/couponbg.png') no-repeat 0px -150px;
+					position: absolute;
+					top: 21px;
+					right: 16px;
+				}
+			}
+			.leftb1{
+				float: left;
+				width: 230px;
+				padding-top: 16px;
+				p{
+					height: 60px;
+					overflow: hidden;
+				}
+			}
+
+			.btnbox{
+				width: 135px;
+				float: left;
+			
+				// background: #ff0000;
+				text-align: center;
+				margin-top: 48px;
+			}
+			.row{
+				margin-top: 10px;
+			}
+			.time{
+				float: left;
+				width: 155px;
+			}
+			.titleleft{
+				float: left;
+				height: 40px;
+			}
+		}
+
+	}
+
+
+
+	&.disabled{
+		.coupon{
+			background: url('@{img}/couponbg.png') no-repeat -160px 0px;
+			h2{
+
+				-webkit-text-shadow: 2px 2px 0px darken(#cecece, 10%);
+				-moz-text-shadow: 2px 2px 0px darken(#cecece, 10%);
+				-ms-text-shadow: 2px 2px 0px darken(#cecece, 10%);
+				-o-text-shadow: 2px 2px 0px darken(#cecece, 10%);
+				text-shadow: 2px 2px 0px darken(#cecece, 10%);
+				margin-top: 40px;
+			}
+			
+		}
+
+		.conponcontent{
+			.dottedbox{
+				.iconbox{
+					.icomeony{
+						background: url('@{img}/couponbg.png') no-repeat -160px -150px;
+					}
+				}
+				.btnbox{
+					width: 135px;
+					float: left;
+					text-align: center;
+					margin-top: 48px;
+
+					a{
+						&.btn{
+							&.btn-primary{
+								background: @inputBorderColor;
+								cursor: default;
+								&:hover{
+									background: @inputBorderColor!important;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+
+	}
+
+}
+

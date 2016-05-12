@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+
+@import "../lib/element";
+
+
+
+.aboutnav{
+	height: 48px;
+	background: @borderColor2;
+	text-align: center;
+	.row{
+		padding-top: 8px;
+		margin: 0px auto;
+		width: 650px;
+
+	}
+	a{
+		height: 30px;
+		line-height: 30px;
+		display: inline-block;
+		float: left;
+		border:1px solid @borderColor2;
+		width: 85px;
+		&.active{
+			border-color:@baseTextColor;
+		}
+		margin-right: 20px;
+	}
+}
+

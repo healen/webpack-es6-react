@@ -1,0 +1,113 @@
+@import "variables";
+
+.-buttons{
+	._slide_button(@bg:@markColor,@ft:#ffffff,@ftsize:@titleSize,@pdx:0px,@pdy:0px,@radus:3px){
+		background-color: @bg;
+		color: @ft;
+		font-size: @ftsize - 2;
+		padding: @pdx @pdy;
+		border-radius: @radus;
+		display: inline-block;
+		width: 90px;
+		height: 42px;
+		line-height: 42px;
+		text-align: center;
+		&:hover{
+			background: darken(@bg, 10%);
+			color: @ft;
+		}
+	}
+
+	._hollow_button(@sideColor:@markColorLighten,@ft:@markColorLighten,@ftsize:@titleSize,@pdx:0px,@pdy:0px,@radus:3px){
+		border:1px solid @sideColor;
+		color: @ft;
+		font-size: @ftsize - 3;
+		padding: @pdx @pdy;
+		width: 118px;
+		height: 38px;
+		line-height: 38px;
+		border-radius: @radus;
+		display: inline-block;
+		&:hover{
+			color: #ffffff;
+			background-color: @sideColor;
+			// border:1px solid @markColor;
+		}
+	}
+}
+
+.-btn{
+	._btn-default(@bg:#ccc,@ft:#666,@w:100%,@h:36px){
+		font-size: 16px;
+		background-color: @bg;
+		color: @ft;
+		width: @w;
+		height: @h;
+		border:none;
+		cursor: pointer;
+		border-radius: 3px;
+		&:hover{
+			background-color: darken(@bg, 10%)
+		}
+
+		&:disabled{
+
+		}
+	}
+	._btn-primary(){
+		._btn-default(@bg:@markColor,@ft:#ffffff,@w:100%,@h:36px);
+		&:disabled{
+			._btn-default(@bg:#ccc,@ft:#ffffff,@w:100%,@h:36px);
+			background-color: #ccc;
+			&:hover{
+				background-color: #ccc;
+			}
+		}
+	}
+	._btn-info(){
+		._btn-default(@bg:@markColorLighten,@ft:#ffffff,@w:100%,@h:36px);		
+		&:disabled{
+			._btn-default(@bg:#ccc,@ft:#ffffff,@w:100%,@h:36px);
+			background-color: #ccc;
+			&:hover{
+				background-color: #ccc;
+			}
+		}
+		&.btn-mx{
+			._btn-default(@bg:@markColorLighten,@ft:#ffffff,@w:100%,@h:42px);
+			
+			&:disabled{
+				._btn-default(@bg:#ccc,@ft:#ffffff,@w:100%,@h:42px);
+				background-color: #ccc;
+				&:hover{
+					background-color: #ccc;
+				}
+			}
+		}
+	}
+	._btn-w(@bg:@markColor,@ft:#ffffff,@w:160px,@h:36px){
+		font-size: 16px;
+		background-color: @bg;
+		color: @ft!important;
+		width: @w;
+		height: @h;
+		border:none;
+		cursor: pointer;
+		display: block;
+		text-align: center;
+		line-height: @h;
+		display: inline-block;
+
+		border-radius: 2px;
+		&:hover{
+			background-color: darken(@bg, 10%)
+		}
+
+		&:disabled{
+
+		}
+	}
+	
+
+}
+

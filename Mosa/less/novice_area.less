@@ -1,0 +1,254 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../button";
+@import "../lib/element";
+
+/*首页样式*/
+
+html,body{
+	background: #ffffff;
+}
+.novicebanner{
+	min-width: @documentWidth;
+	height: 350px;
+	background: url("@{img}/novice_bg.png") no-repeat center center #fff3d9;
+}
+
+.novice{
+	width: @documentWidth;
+	margin: 0px auto;
+	padding-bottom: 43px;
+	h2{
+		margin-bottom: 50px;
+		text-align: center;
+		font-size: 30px;
+	}
+	.f1{
+		h2{
+			font-size: 24px;
+		}
+		p{
+			padding-bottom: 50px;
+		}
+	}
+	.f2{
+		h2{
+
+			color: @markColor;
+		}
+		@mrw:197px;
+		.listboxwarp{
+			width: @documentWidth;
+			.boxwarp{
+				width: @documentWidth + @mrw + 20;
+				._clearfix();
+				.boxlist{
+					width: 211px;
+					height: 204px;
+					float: left;
+					margin-right: @mrw;
+					margin-bottom: 60px;
+					// background: #ff0000;
+					text-align: center;
+
+					img{
+						display: block;
+						margin: 0px auto;
+					}
+					h3{
+						font-size: 16px;
+						color: @titleFtColor;
+						padding: 5px 0px;
+					}
+					p{
+						line-height: 20px;
+						text-align: left;
+						&.center{
+							text-align: center;
+						}
+
+					}
+				}
+			}
+		}
+	}
+	.f3{
+		h2{
+			color: @markColor;
+		}
+		.slidebox{
+			width: 870px;
+			height: 410px;
+			overflow: hidden;
+			position: relative;
+			// background: #FF0000;
+			margin: 0px auto 20px auto;
+			.slidewarp{
+				width: 410px;
+				height: 410px;
+				position: relative;
+				margin: 0px auto;
+				overflow: hidden;
+				.front{
+					width: 410px;
+					height: 410px;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					background: url('@{img}/novice_v.png') no-repeat 0px 0px;
+					z-index: 2;
+
+				}
+				.imglist{
+					width: 410px;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					z-index: 1;
+					li{
+						width: 410px;
+						height: 410px;
+						overflow: hidden;
+						float: left;
+						img{
+							width: 410px;
+							height: 410px;
+						}
+					}
+
+
+				}
+
+
+
+			}
+			.slidebtn{
+				width: 56px;
+				height: 90px;
+				position: absolute;
+				z-index: 4;
+				top: 50%;
+				margin-top: -45px;
+				background-image: url("@{img}/slidebtn.png");
+				cursor: pointer;
+				&.next{
+					right: 0px;
+					background-position: -56px 0px;
+					&:hover{
+						background-position: -56px -98px;
+					}
+				}
+				&.prov{
+					left: 0px;
+					background-position: 0px 0px;
+					&:hover{
+						background-position: 0px -98px;
+					}
+				}
+			}
+		}
+
+		.crumbs{
+
+			width: 1000px;
+			height: 110px;
+			margin:0px auto;
+			margin-top: 40px;
+			margin-bottom: 20px;
+			._clearfix();
+			.icolist{
+				text-align: center;
+				font-size: 16px;
+				display: block;
+				width: 100px;
+				height: 110px;
+				float: left;
+				@y:75px;
+				@x:-76px;
+				color: @baseTextColor;
+
+				.ico{
+					width: 74px;
+					display: block;
+					margin: 0px auto;
+					height: 74px;
+					background: url("@{img}/noviceico.png") no-repeat;
+
+					&.i1{
+						background-position: 0px 0px;
+
+					}
+					&.i2{
+						background-position: 0px (0 - @y*1);
+						
+					}
+					&.i3{
+						background-position: 0px (0 - @y*2);
+					}
+					&.i4{
+						background-position: 0px (0 - @y*3);
+					}
+					&.i5{
+						background-position: 0px (0 - @y*4);
+					}
+
+				}
+
+				&.active{
+					.ico{
+					
+
+					&.i1{
+						background-position: @x 0px;
+
+					}
+					&.i2{
+						background-position: @x (0 - @y*1);
+						
+					}
+					&.i3{
+						background-position: @x (0 - @y*2);
+					}
+					&.i4{
+						background-position: @x (0 - @y*3);
+					}
+					&.i5{
+						background-position: @x (0 - @y*4);
+					}
+
+				}
+				
+				p{
+					color: @markColorLighten;
+				}
+				}
+				&:hover{
+					color: @baseTextColor;
+				}
+			}
+			.jt{
+				width: 118px;
+				height: 18px;
+				float: left;
+				background: url("@{img}/noviceico.png") no-repeat 40px -379px;
+				margin-top: 30px;
+			}
+
+		}
+
+		.btnbox{
+			padding: 20px 0px;
+
+			.inlinebtn{
+				height: 50px;
+				line-height: 50px;
+				font-size: 18px;
+				padding-left:44px;
+				padding-right: 44px;
+			}
+		}
+	}
+}
+
+
+
